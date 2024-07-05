@@ -13,9 +13,6 @@
   <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
-
-    <oracle.jdbc.driver.version>12.2.0.1</oracle.jdbc.driver.version>
-    <ojdbc8.path>/programs/Java-Oracle-Project/src/libs/ojdbc8-12.2.0.1.jar</ojdbc8.path>
   </properties>
 
   <!-- The following defines the dependencies which are used in the project -->
@@ -25,8 +22,6 @@
       <groupId>com.oracle.database.jdbc</groupId>
       <artifactId>ojdbc8</artifactId>
       <version>12.2.0.1</version>
-      <scope>system</scope>
-      <systemPath>${ojdbc8.path}</systemPath>
     </dependency>
 
     <dependency>
