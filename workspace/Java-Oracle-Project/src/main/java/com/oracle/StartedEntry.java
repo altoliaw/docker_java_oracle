@@ -36,6 +36,7 @@ public class StartedEntry {
                         System.out.println("Topic: " + rs.getString("topic") + ", Sequence: " + rs.getInt("seq") + ", Info: " + rs.getString("info"));
                      }
                   }
+                  System.out.println("======================"+ rowNum + " * " + i +"==========================================");
                }
             }
       } catch (SQLException e) {
