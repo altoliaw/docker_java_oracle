@@ -1,4 +1,6 @@
 # Introduction
+Two different implementations of the JAVA prepared statements are proposed. One is used by the Maven and is located in the branch, "main"; the 
+other is used by the original JAVA which is managed by the shell script, and is located in the "nomvn" branch.
 
 To build the application for the ojdbc verification, here the editor use the following command to generate a new project, namely "**Java-Oracle-Project**" by maven. If the project already exists, the following command can not be used. This file is the history that the editor denoted.
 
