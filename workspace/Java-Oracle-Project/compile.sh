@@ -1,6 +1,6 @@
 clear
 # Versions, libs/ojdbc8-12.2.0.1.jar
-ojdbcVersion="libs/ojdbc8-18.3.0.0.jar"
+ojdbcVersion="libs/ojdbc8-19.3.0.0.jar"
 
 if [[ "$1" = "-c" ]]
 then
