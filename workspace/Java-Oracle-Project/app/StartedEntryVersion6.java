@@ -31,11 +31,12 @@ class StartedEntryVersion6 {
          connection = DriverManager.getConnection(jdbcUrl, DB_USERNAME, DB_PASSWORD);
          System.out.println("Connected to Oracle database successfully.");
 
-         String sql = "SELECT * FROM (SELECT t.* FROM SYSTEM.HELP t) WHERE ROWNUM <= ?";
+         String sql = "SELECT * FROM (SELECT t.* FROM SYSTEM.HELP t WHERE ROWNUM <= ?) WHERE ROWNUM = 1";
          pstmt = connection.prepareStatement(sql);
 
-         for (int i = 1; i <= 3; i++) {
-            pstmt.setInt(1, rowNum * i);
+         for (int i = 1, j = -201; i <= 401; i++) {
+            // pstmt.setInt(1, rowNum * i);
+            pstmt.setInt(1, j++);
 
             rs = pstmt.executeQuery();
             while (rs.next()) {

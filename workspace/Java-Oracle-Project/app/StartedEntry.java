@@ -27,7 +27,7 @@ class StartedEntry {
 
             String sql = "SELECT * FROM (SELECT t.* FROM SYSTEM.HELP t) WHERE ROWNUM <= ?";
             try (PreparedStatement pstmt = connection.prepareStatement(sql)) {
-               for (int i = 1; i <= 3; i++) {
+               for (int i = 2; i <= 3; i++) {
                   pstmt.setInt(1, rowNum * i);
 
                   try (ResultSet rs = pstmt.executeQuery()) {
